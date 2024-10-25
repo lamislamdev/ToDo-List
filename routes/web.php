@@ -14,9 +14,9 @@ use Inertia\Inertia;
 Route::get('/', function (){
     return inertia::render('Home');
 });
-Route::get('/login-x', function (){
-    return inertia::render('login');
-});
+Route::get('/login', [PageController::class, 'login'])->name('login');
+
+Route::get('/dashboard', [PageController::class,'dashboard'])->name('dashboard');
 
 Route::post('/user-register', [UserController::class, 'register'])->name('user-register');
 Route::post('/user-login', [UserController::class, 'login'])->name('user-login');

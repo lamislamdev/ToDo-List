@@ -10,10 +10,16 @@ use Inertia\Inertia;
 
 class PageController extends Controller
 {
-    function home()
+
+    function dashboard()
     {
 
         return inertia::render('Dashboard');
+    }
+    function login()
+    {
+
+        return inertia::render('Login');
     }
     function about()
     {

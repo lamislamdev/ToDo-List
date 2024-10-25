@@ -1,15 +1,14 @@
 <script setup>
 import Nav from "@/Component/Nav.vue";
-import Home from "@/Component/Home.vue";
+import Login from "@/Component/Login.vue";
 
 </script>
 
 <template>
 
-    <Nav/>
-    <Home/>
+<Nav/>
 
-
+<Login/>
 
 </template>
 
